@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="xtd-qm-Msc">
+                                <rect key="frame" x="55" y="166" width="120" height="2"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EuM-DZ-H39">
+                                <rect key="frame" x="55" y="217" width="120" height="2"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bkm-yf-beu">
+                                <rect key="frame" x="55" y="264" width="120" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOa-hr-RkV">
+                                <rect key="frame" x="236" y="152" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.23921568630000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="下载"/>
+                                <state key="selected" title="暂停">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="download1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AbC-cu-dCC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J57-vP-YGv">
+                                <rect key="frame" x="236" y="203" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.23921568630000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="下载"/>
+                                <state key="selected" title="暂停">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7Z-qr-QiR">
+                                <rect key="frame" x="236" y="250" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.23921568630000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="下载"/>
+                                <state key="selected" title="暂停">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRA-G9-CSQ">
+                                <rect key="frame" x="185" y="207" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he8-ze-ct3">
+                                <rect key="frame" x="185" y="254" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-An-Jiq">
+                                <rect key="frame" x="185" y="156" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdi-HW-uxs">
+                                <rect key="frame" x="300" y="152" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.80402544909999996" blue="0.21960044810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删除"/>
+                                <state key="selected" title="暂停">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteFile1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7g-KC-ddd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HD-kb-x6L">
+                                <rect key="frame" x="300" y="202" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.80402544909999996" blue="0.21960044810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删除"/>
+                                <state key="selected" title="暂停">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uA-pD-Uu6">
+                                <rect key="frame" x="300" y="250" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.80402544909999996" blue="0.21960044810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删除"/>
+                                <state key="selected" title="暂停">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-eD-3Rh">
+                                <rect key="frame" x="300" y="288" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.80402544909999996" blue="0.21960044810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="清空"/>
+                                <state key="selected" title="暂停">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletaAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o4M-EY-5U1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="downloadButton1" destination="zOa-hr-RkV" id="QB8-my-ZRD"/>
+                        <outlet property="progressLable1" destination="Dec-An-Jiq" id="1qM-ED-vcY"/>
+                        <outlet property="progressView1" destination="xtd-qm-Msc" id="uC0-pV-oEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
